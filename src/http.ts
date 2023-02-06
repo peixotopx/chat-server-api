@@ -12,7 +12,7 @@ import './database/connection'
 const app = express()
 const server = http.createServer(app)
 
-// necessário abaixo para publicação no Azure App Web
+// necessário o abaixo para publicação no Azure App Web
 const io = new socketio.Server(server, {
     perMessageDeflate :false
 });

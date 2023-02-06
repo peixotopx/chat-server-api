@@ -39,7 +39,7 @@ require("./database/connection");
 const app = (0, express_1.default)();
 const server = http_1.default.createServer(app);
 exports.server = server;
-// necessário abaixo para publicação no Azure App Web
+// necessário o abaixo para publicação no Azure App Web
 const io = new socketio.Server(server, {
     perMessageDeflate: false
 });
